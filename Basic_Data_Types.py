@@ -12,5 +12,6 @@ b="strings,examples"
 print(type(b))
 c=False
 print(type(c))
+print("Today")
 
    

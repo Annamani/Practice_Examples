@@ -7,3 +7,4 @@ for n in range(1,35):
         print("Buzz")
     else:
         print(n)
+for

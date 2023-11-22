@@ -25,11 +25,27 @@
     
 # print(performOperations(4, 4, 'multiply', message='successfully function is executed'))
 
-# *Args
-def printArgs(*args):
-    print(args)
+# # *Args--> We cant pass keyword arguments
+# #printArgs(1,2,3, message="Hello")
+# def printArgs(*args):
+#     print(args)
 
-printArgs("Hello","Annamani","Thanks for writing me")
-printArgs(1,2,3,4,5,6,7,8,9,10)
-printArgs(('a','b'),{1,2,3,4},['abc','def'])
+# printArgs("Hello","Annamani","Thanks for writing me")
+# printArgs(1,2,3,4,5,6,7,8,9,10)
+# printArgs(('a','b'),{1,2,3,4},['abc','def'])
+
+
+
 # **kwargs
+def printArgs(*args,**kwargs):
+     print(args) #It gives output as a tuple
+     print(kwargs) #It gives output as a Dictionary
+
+printArgs(1,2,3, message="Hello")
+
+# import 
+# def performOperations(*args, operation='sum'):
+#     if operation=='sum':
+#         return num1+num2
+#     if operation=='multiply':
+#         return num1*num2

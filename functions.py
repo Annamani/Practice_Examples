@@ -37,15 +37,16 @@
 
 
 # **kwargs
-def printArgs(*args,**kwargs):
-     print(args) #It gives output as a tuple
-     print(kwargs) #It gives output as a Dictionary
+# def printArgs(*args,**kwargs):
+#      print(args) #It gives output as a tuple
+#      print(kwargs) #It gives output as a Dictionary
 
-printArgs(1,2,3, message="Hello")
-
-# import 
-# def performOperations(*args, operation='sum'):
-#     if operation=='sum':
-#         return num1+num2
-#     if operation=='multiply':
-#         return num1*num2
+# printArgs(1,2,3, message="Hello")
+import math
+def performOperation(*args, operation='sum'):
+    if operation == 'sum':
+        return sum(args)
+    if operation == 'multiply':
+        return math.prod(args)
+    
+print(performOperation(1,2,3,6,operation='sum'))

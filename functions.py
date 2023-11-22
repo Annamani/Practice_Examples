@@ -14,3 +14,16 @@ print(performOperations(3, 4, 'multiply'))
 print(performOperations(4, 5, 'div'))
 print(performOperations(5, 6, 'sub'))
 print(performOperations(6, 7, 'mod'))
+
+# Named Parameters
+def performOperations(num1, num2, operation='multiply', message='Default message'):
+    print(message)
+    if operation=='sum':
+        return num1+num2
+    if operation=='multiply':
+        return num1*num2
+    
+print(performOperations(4, 4, 'multiply', message='successfully function is executed'))
+
+# *Args
+# **kwargs

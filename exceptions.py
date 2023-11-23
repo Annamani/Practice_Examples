@@ -22,21 +22,32 @@
     
 # causeError()
 
-# Custome decorators
-def handleException(func):
-    def wrapper(*args):
-        try:
-            func(*args)
-        except TypeError:
-            print('There was a type error!')
-        except ZeroDivisionError:
-            print('There was a zero division error!')
-        except Exception:
-            print('There was some sort of error!')
-    return wrapper
+# #Custome decorators
+# def handleException(func):
+#     def wrapper(*args):
+#         try:
+#             func(*args)
+#         except TypeError:
+#             print('There was a type error!')
+#         except ZeroDivisionError:
+#             print('There was a zero division error!')
+#         except Exception:
+#             print('There was some sort of error!')
+#     return wrapper
 
-@handleException
-def causeError():
-    return 1/0
+# @handleException
+# def causeError():
+#     return 1/0
 
-causeError()
+# causeError()
+
+
+# Raise An Exception
+
+def raiseError(n):
+    if n == 0:
+        raise Exception()
+    print(n)
+    
+raiseError(1)
+raiseError(0)

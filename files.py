@@ -12,6 +12,12 @@ f.write('Kamma\n')
 f.write('Software Engineer\n')
 f.close()
 
+with open('samplefile.txt', 'a') as f:
+    f.write('some stuff\n')
+    f.write('some other stuff\n')
+    
+print(f)
+
 
 
 

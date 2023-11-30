@@ -5,6 +5,7 @@ def longSquare(num, results):
     results[num] = num**2
 
 results = {}
+# Creating threads
 t1 = threading.Thread(target=longSquare, args=(1,results))
 t2 = threading.Thread(target=longSquare, args=(2,results))
 

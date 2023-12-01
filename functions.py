@@ -48,5 +48,7 @@ def performOperation(*args, operation='sum'):
         return sum(args)
     if operation == 'multiply':
         return math.prod(args)
+    if operation == 'division':
+        return math.prod(args)
     
 print(performOperation(1,2,3,6,operation='sum'))

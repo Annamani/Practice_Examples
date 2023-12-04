@@ -22,9 +22,12 @@ class Dog:
     
     def speak(self):
         print(self.name + ' says: Bark!')
+    def eat(self):
+        print(self.name + ' Eat: Chicken!')
 
 myDog = Dog('Rover')
 myDog._legs = 3
 print(myDog.name)
 print(myDog.getLegs())
 print(Dog._legs)
+print(myDog.speak())

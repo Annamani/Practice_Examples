@@ -30,5 +30,5 @@ myDog._legs = 3
 print(myDog.name)
 print(myDog.getLegs())
 print(Dog._legs)
-print(myDog.speak())
+myDog.speak()
 myDog.eat()
